@@ -13,7 +13,7 @@ if __name__ == '__main__':
             image = Image.open(imageFolder + filename)
             image.save(outputFolder + "compressed_" + filename, optimize=True, quality=65)
             os.remove(imageFolder + filename)
-            print(name + ": " + str(os.path.getsize(name + extension)) + " bytes")
+            print(name + ": " + extension)
         
         if extension in [".mp3"]:
             musicFolder = "/Users/Moco/Music/"
